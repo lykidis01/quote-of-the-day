@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quotes — Διάσημες Αφηγήσεις</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='25' y='25' width='50' height='50' rx='10' transform='rotate(45 50 50)' fill='%23ff5fa2'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="glow glow-a" aria-hidden="true"></div>
+  <div class="glow glow-b" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <p id="date" class="date" aria-live="polite"></p>
+  </header>
+
+  <main class="stage">
+    <figure class="quote-card" id="quoteCard">
+      <blockquote class="quote-text" id="quoteText">Φόρτωση...</blockquote>
+      <figcaption class="quote-author" id="quoteAuthor"></figcaption>
+    </figure>
+  </main>
+
+  <div class="controls">
+    <button class="diamond-btn" id="newQuoteBtn" type="button" aria-label="Νέο quote">
+      <span class="diamond-inner" aria-hidden="true">&#8635;</span>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
